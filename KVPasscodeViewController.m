@@ -88,6 +88,7 @@
     fakeField = [[UITextField alloc] initWithFrame:CGRectZero];
     fakeField.delegate = self;
     fakeField.keyboardType = UIKeyboardTypeNumberPad;
+    fakeField.secureTextEntry = YES;
     fakeField.text = @"";
     [fakeField becomeFirstResponder];
     [self.view addSubview:fakeField];
