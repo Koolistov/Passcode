@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C79F70EA13325C64007B9A22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79F70E913325C64007B9A22 /* UIKit.framework */; };
+		C79F70EC13325C64007B9A22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79F70EB13325C64007B9A22 /* Foundation.framework */; };
+		C79F70EE13325C64007B9A22 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79F70ED13325C64007B9A22 /* CoreGraphics.framework */; };
+		C79F70F413325C64007B9A22 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C79F70F213325C64007B9A22 /* InfoPlist.strings */; };
+		C79F70F713325C64007B9A22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C79F70F613325C64007B9A22 /* main.m */; };
+		C79F70FA13325C64007B9A22 /* PasscodeSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C79F70F913325C64007B9A22 /* PasscodeSampleAppDelegate.m */; };
+		C79F70FD13325C64007B9A22 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C79F70FB13325C64007B9A22 /* MainWindow.xib */; };
+		C79F710013325C64007B9A22 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79F70FF13325C64007B9A22 /* RootViewController.m */; };
+		C79F710313325C64007B9A22 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C79F710113325C64007B9A22 /* RootViewController.xib */; };
+		C79F710C13325C73007B9A22 /* KVPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79F710A13325C73007B9A22 /* KVPasscodeViewController.m */; };
+		C79F710D13325C73007B9A22 /* KVPasscodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C79F710B13325C73007B9A22 /* KVPasscodeViewController.xib */; };
+		C79F710F1332670E007B9A22 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79F710E1332670E007B9A22 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C79F70E513325C64007B9A22 /* PasscodeSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasscodeSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C79F70E913325C64007B9A22 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C79F70EB13325C64007B9A22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C79F70ED13325C64007B9A22 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C79F70F113325C64007B9A22 /* PasscodeSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PasscodeSample-Info.plist"; sourceTree = "<group>"; };
+		C79F70F313325C64007B9A22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C79F70F513325C64007B9A22 /* PasscodeSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PasscodeSample-Prefix.pch"; sourceTree = "<group>"; };
+		C79F70F613325C64007B9A22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C79F70F813325C64007B9A22 /* PasscodeSampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasscodeSampleAppDelegate.h; sourceTree = "<group>"; };
+		C79F70F913325C64007B9A22 /* PasscodeSampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasscodeSampleAppDelegate.m; sourceTree = "<group>"; };
+		C79F70FC13325C64007B9A22 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		C79F70FE13325C64007B9A22 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		C79F70FF13325C64007B9A22 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		C79F710213325C64007B9A22 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		C79F710913325C73007B9A22 /* KVPasscodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KVPasscodeViewController.h; path = ../KVPasscodeViewController.h; sourceTree = "<group>"; };
+		C79F710A13325C73007B9A22 /* KVPasscodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVPasscodeViewController.m; path = ../KVPasscodeViewController.m; sourceTree = "<group>"; };
+		C79F710B13325C73007B9A22 /* KVPasscodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KVPasscodeViewController.xib; path = ../KVPasscodeViewController.xib; sourceTree = "<group>"; };
+		C79F710E1332670E007B9A22 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C79F70E213325C64007B9A22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C79F710F1332670E007B9A22 /* QuartzCore.framework in Frameworks */,
+				C79F70EA13325C64007B9A22 /* UIKit.framework in Frameworks */,
+				C79F70EC13325C64007B9A22 /* Foundation.framework in Frameworks */,
+				C79F70EE13325C64007B9A22 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C79F70DA13325C64007B9A22 = {
+			isa = PBXGroup;
+			children = (
+				C79F710913325C73007B9A22 /* KVPasscodeViewController.h */,
+				C79F710A13325C73007B9A22 /* KVPasscodeViewController.m */,
+				C79F710B13325C73007B9A22 /* KVPasscodeViewController.xib */,
+				C79F70EF13325C64007B9A22 /* PasscodeSample */,
+				C79F70E813325C64007B9A22 /* Frameworks */,
+				C79F70E613325C64007B9A22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C79F70E613325C64007B9A22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C79F70E513325C64007B9A22 /* PasscodeSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C79F70E813325C64007B9A22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C79F710E1332670E007B9A22 /* QuartzCore.framework */,
+				C79F70E913325C64007B9A22 /* UIKit.framework */,
+				C79F70EB13325C64007B9A22 /* Foundation.framework */,
+				C79F70ED13325C64007B9A22 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C79F70EF13325C64007B9A22 /* PasscodeSample */ = {
+			isa = PBXGroup;
+			children = (
+				C79F70F813325C64007B9A22 /* PasscodeSampleAppDelegate.h */,
+				C79F70F913325C64007B9A22 /* PasscodeSampleAppDelegate.m */,
+				C79F70FB13325C64007B9A22 /* MainWindow.xib */,
+				C79F70FE13325C64007B9A22 /* RootViewController.h */,
+				C79F70FF13325C64007B9A22 /* RootViewController.m */,
+				C79F710113325C64007B9A22 /* RootViewController.xib */,
+				C79F70F013325C64007B9A22 /* Supporting Files */,
+			);
+			path = PasscodeSample;
+			sourceTree = "<group>";
+		};
+		C79F70F013325C64007B9A22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C79F70F113325C64007B9A22 /* PasscodeSample-Info.plist */,
+				C79F70F213325C64007B9A22 /* InfoPlist.strings */,
+				C79F70F513325C64007B9A22 /* PasscodeSample-Prefix.pch */,
+				C79F70F613325C64007B9A22 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C79F70E413325C64007B9A22 /* PasscodeSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C79F710613325C64007B9A22 /* Build configuration list for PBXNativeTarget "PasscodeSample" */;
+			buildPhases = (
+				C79F70E113325C64007B9A22 /* Sources */,
+				C79F70E213325C64007B9A22 /* Frameworks */,
+				C79F70E313325C64007B9A22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasscodeSample;
+			productName = PasscodeSample;
+			productReference = C79F70E513325C64007B9A22 /* PasscodeSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C79F70DC13325C64007B9A22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Koolistov;
+			};
+			buildConfigurationList = C79F70DF13325C64007B9A22 /* Build configuration list for PBXProject "PasscodeSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C79F70DA13325C64007B9A22;
+			productRefGroup = C79F70E613325C64007B9A22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C79F70E413325C64007B9A22 /* PasscodeSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C79F70E313325C64007B9A22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C79F70F413325C64007B9A22 /* InfoPlist.strings in Resources */,
+				C79F70FD13325C64007B9A22 /* MainWindow.xib in Resources */,
+				C79F710313325C64007B9A22 /* RootViewController.xib in Resources */,
+				C79F710D13325C73007B9A22 /* KVPasscodeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C79F70E113325C64007B9A22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C79F70F713325C64007B9A22 /* main.m in Sources */,
+				C79F70FA13325C64007B9A22 /* PasscodeSampleAppDelegate.m in Sources */,
+				C79F710013325C64007B9A22 /* RootViewController.m in Sources */,
+				C79F710C13325C73007B9A22 /* KVPasscodeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C79F70F213325C64007B9A22 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C79F70F313325C64007B9A22 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C79F70FB13325C64007B9A22 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C79F70FC13325C64007B9A22 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		C79F710113325C64007B9A22 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C79F710213325C64007B9A22 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C79F710413325C64007B9A22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C79F710513325C64007B9A22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		C79F710713325C64007B9A22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PasscodeSample/PasscodeSample-Prefix.pch";
+				INFOPLIST_FILE = "PasscodeSample/PasscodeSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C79F710813325C64007B9A22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PasscodeSample/PasscodeSample-Prefix.pch";
+				INFOPLIST_FILE = "PasscodeSample/PasscodeSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C79F70DF13325C64007B9A22 /* Build configuration list for PBXProject "PasscodeSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C79F710413325C64007B9A22 /* Debug */,
+				C79F710513325C64007B9A22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C79F710613325C64007B9A22 /* Build configuration list for PBXNativeTarget "PasscodeSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C79F710713325C64007B9A22 /* Debug */,
+				C79F710813325C64007B9A22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C79F70DC13325C64007B9A22 /* Project object */;
+}
