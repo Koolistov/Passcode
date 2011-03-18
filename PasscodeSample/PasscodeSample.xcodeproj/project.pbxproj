@@ -19,6 +19,7 @@
 		C79F710C13325C73007B9A22 /* KVPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79F710A13325C73007B9A22 /* KVPasscodeViewController.m */; };
 		C79F710D13325C73007B9A22 /* KVPasscodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C79F710B13325C73007B9A22 /* KVPasscodeViewController.xib */; };
 		C79F710F1332670E007B9A22 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79F710E1332670E007B9A22 /* QuartzCore.framework */; };
+		C79F711213338C8F007B9A22 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79F711113338C8F007B9A22 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		C79F710A13325C73007B9A22 /* KVPasscodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVPasscodeViewController.m; path = ../KVPasscodeViewController.m; sourceTree = "<group>"; };
 		C79F710B13325C73007B9A22 /* KVPasscodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KVPasscodeViewController.xib; path = ../KVPasscodeViewController.xib; sourceTree = "<group>"; };
 		C79F710E1332670E007B9A22 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C79F711113338C8F007B9A22 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C79F711213338C8F007B9A22 /* AudioToolbox.framework in Frameworks */,
 				C79F710F1332670E007B9A22 /* QuartzCore.framework in Frameworks */,
 				C79F70EA13325C64007B9A22 /* UIKit.framework in Frameworks */,
 				C79F70EC13325C64007B9A22 /* Foundation.framework in Frameworks */,
@@ -80,6 +83,7 @@
 		C79F70E813325C64007B9A22 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C79F711113338C8F007B9A22 /* AudioToolbox.framework */,
 				C79F710E1332670E007B9A22 /* QuartzCore.framework */,
 				C79F70E913325C64007B9A22 /* UIKit.framework */,
 				C79F70EB13325C64007B9A22 /* Foundation.framework */,

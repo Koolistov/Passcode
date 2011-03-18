@@ -5,7 +5,7 @@ A view controller that lets you enter 4 digit pass codes. It supports animations
 
 USAGE
 -----
-Your app needs to link against the QuartzCore framework.
+Your app needs to link against the QuartzCore framework and the AudioToolbox framework.
 
 SAMPLE
 ------

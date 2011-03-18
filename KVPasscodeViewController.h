@@ -28,11 +28,6 @@
 //  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
-//
-// Known issues:
-// - KVPasscodeAnimationStyleConfirm animation not quite perfect (bullets visible in incoming field)
-//
-
 #import <UIKit/UIKit.h>
 
 @class KVPasscodeViewController;

@@ -31,10 +31,13 @@
 #import "KVPasscodeViewController.h"
 
 #import <QuartzCore/QuartzCore.h>
+#import <AudioToolbox/AudioServices.h>
 
 @interface KVPasscodeViewController ()
 
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag;
+- (void)internalResetWithAnimation:(NSNumber *)animationStyleNumber;
+- (void)notifyDelegate:(NSString *)passcode;
 
 @end
 
@@ -120,10 +123,15 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)resetWithAnimation:(KVPasscodeAnimationStyle)animationStyle {
+- (void)internalResetWithAnimation:(NSNumber *)animationStyleNumber {    
+    KVPasscodeAnimationStyle animationStyle = [animationStyleNumber intValue];
     switch (animationStyle) {
         case KVPasscodeAnimationStyleInvalid:
             ;
+            
+            // Vibrate to indicate error
+            AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
+            
             CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
             [animation setDelegate:self]; 
             [UIView setAnimationDidStopSelector:@selector(animationDidStop:finished:)];
@@ -138,6 +146,12 @@
             break;
         case KVPasscodeAnimationStyleConfirm:
             ;
+            
+            self.bulletField0.text = nil;
+            self.bulletField1.text = nil;
+            self.bulletField2.text = nil;
+            self.bulletField3.text = nil;
+            
             CATransition *transition = [CATransition animation]; 
             [transition setDelegate:self]; 
             [UIView setAnimationDidStopSelector:@selector(animationDidStop:finished:)];
@@ -158,6 +172,16 @@
             fakeField.text = @"";
             break;
     }
+}
+
+- (void)resetWithAnimation:(KVPasscodeAnimationStyle)animationStyle {   
+    // Do the animation a little later, for better animatio
+    [self performSelector:@selector(internalResetWithAnimation:) withObject:[NSNumber numberWithInt:animationStyle] afterDelay:0];
+}
+
+- (void)notifyDelegate:(NSString *)passcode {
+    [self.delegate passcodeController:self passcodeEntered:passcode];
+    fakeField.text = @"";
 }
 
 #pragma mark - CAAnimationDelegate 
@@ -206,8 +230,9 @@
             self.bulletField2.text = @"*";
             self.bulletField3.text = @"*";
         
-            [self.delegate passcodeController:self passcodeEntered:passcode];
-            textField.text = @"";
+            // Notify delegate a little later so we have a change to show the 4th bullet
+            [self performSelector:@selector(notifyDelegate:) withObject:passcode afterDelay:0];
+            
             return NO;
             
             break;
