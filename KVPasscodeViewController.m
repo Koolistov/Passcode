@@ -147,6 +147,7 @@
         case KVPasscodeAnimationStyleConfirm:
             ;
             
+            // This will cause the 'new' fields to appear without bullets already in them
             self.bulletField0.text = nil;
             self.bulletField1.text = nil;
             self.bulletField2.text = nil;
@@ -175,7 +176,7 @@
 }
 
 - (void)resetWithAnimation:(KVPasscodeAnimationStyle)animationStyle {   
-    // Do the animation a little later, for better animatio
+    // Do the animation a little later (for better animation) as it's likely this method is called in our delegate method
     [self performSelector:@selector(internalResetWithAnimation:) withObject:[NSNumber numberWithInt:animationStyle] afterDelay:0];
 }
 
@@ -230,7 +231,7 @@
             self.bulletField2.text = @"*";
             self.bulletField3.text = @"*";
         
-            // Notify delegate a little later so we have a change to show the 4th bullet
+            // Notify delegate a little later so we have a chance to show the 4th bullet
             [self performSelector:@selector(notifyDelegate:) withObject:passcode afterDelay:0];
             
             return NO;
